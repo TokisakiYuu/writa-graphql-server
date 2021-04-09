@@ -1,0 +1,16 @@
+{
+  "name": "writa-graphql-server",
+  "version": "0.1.0",
+  "description": "",
+  "main": "lib/index.js",
+  "author": "TokisakiYuu <tokisakiyuu@qq.com>",
+  "scripts": {
+    "build": "neon build",
+    "start": "node lib/index.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "neon-cli": "^0.8.0"
+  },
+  "license": "MIT"
+}

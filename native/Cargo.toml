@@ -1,0 +1,21 @@
+[package]
+name = "writa-graphql-server"
+version = "0.1.0"
+authors = ["TokisakiYuu <tokisakiyuu@qq.com> <tokisakiyuu@qq.com>"]
+license = "MIT"
+build = "build.rs"
+edition = "2018"
+exclude = ["artifacts.json", "index.node"]
+
+[lib]
+name = "writa_graphql_server"
+crate-type = ["cdylib"]
+
+[build-dependencies]
+neon-build = "0.8.0"
+
+[dependencies]
+neon = "0.8.0"
+mongodb = { version = "1.2.1", features = ["sync"], default-features = false }
+tokio = { version = "0.2.23", features = ["full"] }
+juniper = "0.14.2"
