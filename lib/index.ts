@@ -1,4 +1,4 @@
-var addon = require('../native');
+import addon from "../native";
 
 console.log(addon.hello());
 
